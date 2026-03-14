@@ -1,0 +1,244 @@
+/* technical stuff - set sizing to border
+box method */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(to bottom, #0b0c1a 0%, #0d1a3a 50%, #5e1f26 70%, #0b0c1a 100%);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* styling the font size */
+h1 { font-size: 38px; }
+h2 { font-size: 26px; }
+h3 { font-size: 20px; }
+
+
+/* styling the menu */
+nav ul {
+    list-style-type: none;
+    background-color: red;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 16px;
+}
+nav ul li {
+    display: inline;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav li.selected{
+    color: #606060;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: black;
+}
+
+
+/* sections */
+section {
+    background-color: rgba(0,0,0,0.6); /* 60% transparent black */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* image sizing */
+img.medium {
+    width: 25%;
+    height: auto;
+    min-width: 350px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+img.large {
+    width: 75%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* styling the about section */
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 12px;
+}
+
+.about-text {
+    max-width: 700px;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    align-content: center;
+}
+
+
+
+/* styling the hobby section */
+.hobby-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.hobby-box {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.hobby-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.hobby-box:hover {
+    background-color: red;
+}
+
+.hobby-box iframe {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* styling the museum captions */
+.museum-caption{
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+
+/* styling the contacts */
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-list li a:hover {
+    color: red;
+}
+
+
+/* styling the fun fact */
+#funfact {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+#funfact h3 { 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#funfactbutton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#funfactbutton:hover {
+    background-color: black;
+}
+
+
+/* styling the footer */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+
+/* using media queries for mobile-friendly layout */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 90%;
+        min-width: auto;
+    }
+
+    .hobby-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hobby-box {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body { font-size: 16px; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+
+    #funfactbutton {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+
