@@ -209,17 +209,17 @@ footer {
 /* using media queries for mobile-friendly layout */
 @media (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 16px;
         padding: 15px;
     }
     section {
         padding: 25px;
     }
     h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     h2 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .about-content{
@@ -237,16 +237,25 @@ footer {
     .hobby-container {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 16px;
     }
 
     .hobby-box {
-        width: 90%;
-        min-width: auto;
+        width: 95%;
+        min-width: 0;
     }
 
     img.medium {
         width: 100%;
-        min-width:0
+        min-width: 0;
+    }
+
+    .hobby-box iframe {
+        width: 100%;        /* always fills container width */
+        max-width: 100%;    /* never exceed the hobby box */
+        height: 352px;      /* keep default height */
+        border-radius: 12px;
+        margin: 10px 0;     /* vertical spacing, centered automatically */
+        display: block;
     }
 }
