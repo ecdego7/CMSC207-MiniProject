@@ -6,15 +6,15 @@ This is a single-page personal web profile created as part of the CMSC207: Web P
 ---
 
 ## Features
--**Header and Navigation**: Site title, name and a simple navigation menu to each section of the website.
--**About Me**: A short introduction paragraph with an image included.
--**Hobbies and Interests**: Three sections with brief descriptions that include images and embedded media.
--**Contact Information**: Email, LinkedIn and Facebook links (placeholders)
--**Fun Fact Button**: JavaScript-enabled button displaying random fun facts that disappear after a few seconds.
--**Mobile-Friendly Design**: The website used flexbox layout and media queries to ensure adaptability to different screen sizes.
---
-## Technologies used
--**HTML**
--**CSS**
--**JavaScript**
--**Media Queries**
+- **Header and Navigation**: Site title, name and a simple navigation menu to each section of the website.
+- **About Me**: A short introduction paragraph with an image included.
+- **Hobbies and Interests**: Three sections with brief descriptions that include images and embedded media.
+- **Contact Information**: Email, LinkedIn and Facebook links (placeholders)
+- **Fun Fact Button**: JavaScript-enabled button displaying random fun facts that disappear after a few seconds.
+- **Mobile-Friendly Design**: The website used flexbox layout and media queries to ensure adaptability to different screen sizes.
+---
+## Technologies Used
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Media Queries**
